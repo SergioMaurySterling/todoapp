@@ -5,6 +5,7 @@ import {CreateTodoButton} from '../CreateTodoButton';
 import { TodoItem } from '../TodoItem';
 import { TodoList } from '../TodoList';
 import {TodoContext} from '../TodoContext'
+import {Modal} from '../Modal/Index'
 
 function AppUI () {
     return (
@@ -33,8 +34,22 @@ function AppUI () {
                     );
                 }}
             </TodoContext.Consumer>
-
-        <CreateTodoButton/>
+            <TodoContext.Consumer>
+                {(value) =>{
+                    return (
+                        <React.Fragment>
+                            {value.openModal && (
+                                <Modal>
+                                    <p>Prueba!</p>
+                                </Modal>
+                            )}
+                        </React.Fragment>
+                    );
+                }}
+            </TodoContext.Consumer>
+            <CreateTodoButton
+                
+            />
         </React.Fragment>
     );
 }

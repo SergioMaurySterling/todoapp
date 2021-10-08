@@ -1,0 +1,17 @@
+.subtitle {
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight:bolder;
+    padding-bottom: 30px;
+}
+
+.title{
+    color: #98ca3f;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 45px;
+    font-style:italic;
+}

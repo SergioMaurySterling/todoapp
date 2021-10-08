@@ -1,0 +1,11 @@
+.container{
+    padding-bottom: 15px;
+}
+
+.badge.bg-primary.rounded-pill.green{
+    background-color: #98ca3f;
+}
+
+.trueClass {
+    text-decoration:line-through;
+}
